@@ -2123,6 +2123,177 @@ h2 span {
 
 
 
+/* footer start */
+
+.don-ft {
+  background: #6f93b1;
+  color: #FFFFFF;
+  padding: 60px 20px 30px;
+}
+
+.don-ft-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.don-ft p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.don-ft-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.don-ft-widget h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.don-ft-widget h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.don-ft-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+.don-ft-widget ul li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.don-ft-widget ul li a {
+  font-size: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.don-ft-widget ul li a:hover {
+  transform: translateX(4px);
+  color: #FFFFFF; /* stays white */
+}
+
+/* Contact icons spacing */
+.don-ft-widget.contact ul li i {
+  margin-right: 10px;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.don-ft-logo {
+  max-width: 200px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.don-ft-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.don-ft-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  color: #0B3857;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.don-ft-social a:hover {
+  background: #FFFFFF;
+  color: #0B3857;
+  transform: translateY(-4px);
+}
+
+.don-ft-widget.newsletter .newsletter-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.don-ft-widget.newsletter input[type="email"] {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.don-ft-widget.newsletter button {
+  padding: 8px 16px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  color: #0B3857;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.don-ft-widget.newsletter button:hover {
+  background-color: #e5e5e5;
+  transform: translateY(-2px);
+}
+
+.don-ft-copy {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .don-ft-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .don-ft-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .don-ft-widget.newsletter .newsletter-form {
+    flex-direction: column;
+  }
+
+  .don-ft-widget.newsletter button {
+    width: 100%;
+  }
+}
+
+
+/* footer stop */
+
 
 
 
